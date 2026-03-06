@@ -485,6 +485,43 @@ body {
   font-size: 0.95rem;
 }
 
+/* Konum */
+.location {
+  padding: 4rem 1rem;
+  background: var(--white);
+  border-top: 1px solid var(--border);
+}
+
+.location-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.location .section-title {
+  margin-bottom: 1rem;
+}
+
+.location-address {
+  color: var(--text);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.location-btn {
+  margin-bottom: 2rem;
+}
+
+.location-map {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.location-map iframe {
+  display: block;
+}
+
 /* İletişim */
 .contact {
   background: var(--nav-bg);
