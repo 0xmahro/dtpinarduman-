@@ -456,14 +456,21 @@ body {
   width: 100%;
   height: 100%;
   min-height: 200px;
+  background-repeat: no-repeat;
 }
 
-.ba-half.before .ba-placeholder {
-  background: #e2e8f0;
+/* Görsel yoksa renkli kutu */
+.ba-half.before .ba-placeholder:not(.ba-img) {
+  background-color: #e2e8f0;
 }
 
-.ba-half.after .ba-placeholder {
-  background: var(--light-blue);
+.ba-half.after .ba-placeholder:not(.ba-img) {
+  background-color: var(--light-blue);
+}
+
+/* BEFORE-AFTER fotoğrafları */
+.ba-placeholder.ba-img {
+  background-color: #f1f5f9;
 }
 
 .ba-half.after {
